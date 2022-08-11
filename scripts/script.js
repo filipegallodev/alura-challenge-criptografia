@@ -1,7 +1,9 @@
 var entradaTexto = document.querySelector("#criptografia-entrada");
 var resultadoCriptografia = document.querySelector("#criptografia-resultado");
+
 var botaoCriptografa = document.querySelector(".botao-criptografa");
 var botaoDescriptografa = document.querySelector(".botao-descriptografa");
+var botaoCopiar = document.querySelector(".copia-resultado");
 
 var textoCriptografado, textoDescriptografado = "";
 
@@ -46,6 +48,12 @@ function limpaArea() {
    entradaTexto.value = "";
 }
 
-botaoCriptografa.onclick = criptografaTexto;
+function copiaResultado() {
 
+   resultadoCriptografia.select();
+   document.execCommand("copy");
+}
+
+botaoCriptografa.onclick = criptografaTexto;
 botaoDescriptografa.onclick = descriptografaTexto;
+botaoCopiar.onclick = copiaResultado;
