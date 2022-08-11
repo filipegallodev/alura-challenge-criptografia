@@ -3,19 +3,19 @@ var resultadoCriptografia = document.querySelector("#criptografia-resultado");
 var botaoCriptografa = document.querySelector(".botao-criptografa");
 var botaoDescriptografa = document.querySelector(".botao-descriptografa");
 
-var textoOriginal = entradaTexto.value;
 var textoCriptografado, textoDescriptografado = "";
 
 function criptografaTexto() {
 
-   textoCriptografado = trocaLetras(textoOriginal);
+   textoCriptografado = trocaLetras(entradaTexto.value);
 
+   limpaArea();
    resultadoCriptografia.value = textoCriptografado;
 }
 
 function descriptografaTexto() {
 
-   textoDescriptografado = retornaLetra(textoCriptografado);
+   textoDescriptografado = retornaLetras(entradaTexto.value);
 
    resultadoCriptografia.value = textoDescriptografado;
 }
@@ -30,7 +30,7 @@ function trocaLetras(textoOriginal) {
       .replace(/u/g, "ufat");
 }
 
-function retornaLetra(palavraCriptografada) {
+function retornaLetras(palavraCriptografada) {
 
    return palavraCriptografada
       .replace(/enter/g, "e")
@@ -38,6 +38,12 @@ function retornaLetra(palavraCriptografada) {
       .replace(/ai/g, "a")
       .replace(/ober/g, "o")
       .replace(/ufat/g, "u");
+}
+
+function limpaArea() {
+
+   textoOriginal = "";
+   entradaTexto.value = "";
 }
 
 botaoCriptografa.onclick = criptografaTexto;
