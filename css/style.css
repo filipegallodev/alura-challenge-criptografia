@@ -62,6 +62,10 @@
    text-justify: auto;
 }
 
+.icone-alura {
+   margin-bottom: 30px;
+}
+
 /* botao com animação de cor */
 .botao-criptografa {
    background-color: #0A3871;
