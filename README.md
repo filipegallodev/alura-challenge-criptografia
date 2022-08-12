@@ -1,3 +1,3 @@
 # Alura Challenges Oracle ONE - Criptografia
-![alt text](https://imgur.com/a/bFaTuFk)
+![Imagem do Site](https://i.imgur.com/mxfjAda.jpg)
 Projeto Finalizado!
