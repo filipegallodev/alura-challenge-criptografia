@@ -52,10 +52,11 @@
 
 .entrada-texto {
    color: #0A3871;
-   max-width: auto;
+
    height: 600px;
    line-height: 48px;
-   font-size: 28px;
+   font-size: 26px;
+   text-justify: auto;
 }
 
 /* botao com animação de cor */

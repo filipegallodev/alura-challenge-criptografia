@@ -11,7 +11,7 @@ var textoCriptografado, textoDescriptografado = "";
 
 function criptografaTexto() {
 
-   textoCriptografado = trocaLetras(entradaTexto.value);
+   textoCriptografado = trocaLetras(entradaTexto.value.toLowerCase());
 
    limpaArea();
    resultadoCriptografia.value = textoCriptografado;
