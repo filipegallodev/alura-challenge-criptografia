@@ -5,25 +5,37 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href=".css/style.css">
+   <link rel="stylesheet" href="css/style.css">
    <title>Criptografa Brasil!</title>
 </head>
 
 <body>
 
-   <h1>Alura Challenge Oracle ONE - Criptografia / Work In Progress</h1>
+   <section class="painel">
 
-   <div>
-      <textarea name="Entrada da Criptografia/Descriptografia" id="criptografia-entrada" cols="30" rows="10"></textarea>
-   </div>
+      <img src="images/alura-icone.png" alt="alura-icone">
 
-   <button class="botao-criptografa">Criptografar</button>
+      <div class="container-principal">
 
-   <button class="botao-descriptografa">Descriptografar</button>
-   
-   <div>
-      <textarea name="Resultado da Criptografia/Descriptografia" id="criptografia-resultado" cols="30" rows="10"></textarea>
-   </div>
+         <div class="container-texto-botoes">
+            <textarea name="Entrada da Criptografia/Descriptografia" id="criptografia-entrada" class="entrada-texto"
+               cols="30" rows="10" placeholder="Digite seu texto" wrap="hard"></textarea>
+
+            <div class="botoes">
+               <button class="botao-criptografa">Criptografar</button>
+               <button class="botao-descriptografa">Descriptografar</button>
+            </div>
+         </div>
+
+         <div class="container-resultado">
+            <textarea name="Resultado da Criptografia/Descriptografia" id="criptografia-resultado"
+               class="resultado-criptografia" cols="30" rows="10" readonly placeholder=""></textarea>
+            <button class="copia-resultado">Copiar</button>
+         </div>
+
+      </div>
+
+   </section>
 
 </body>
 

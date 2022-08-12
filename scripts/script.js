@@ -5,6 +5,8 @@ var botaoCriptografa = document.querySelector(".botao-criptografa");
 var botaoDescriptografa = document.querySelector(".botao-descriptografa");
 var botaoCopiar = document.querySelector(".copia-resultado");
 
+resultadoCriptografia.value = "Nenhuma mensagem encontrada...";
+
 var textoCriptografado, textoDescriptografado = "";
 
 function criptografaTexto() {
@@ -19,6 +21,7 @@ function descriptografaTexto() {
 
    textoDescriptografado = retornaLetras(entradaTexto.value);
 
+   limpaArea();
    resultadoCriptografia.value = textoDescriptografado;
 }
 
