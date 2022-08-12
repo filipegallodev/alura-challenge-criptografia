@@ -21,7 +21,7 @@
    align-self: flex-end;
 
    background-color: #FFFFFF;
-   min-width: 400px;
+   min-width: 350px;
    width: 33%;
    height: 800px;
 
@@ -50,7 +50,7 @@
    justify-content: space-around;
    flex-wrap: wrap;
 
-   margin-bottom: 20px;
+   margin-bottom: 40px;
 }
 
 .entrada-texto {
