@@ -6,6 +6,9 @@ Este foi um projeto desenvolvido dentro do programa de educação tecnológica _
 
 Ele consiste em criptografar e descriptografar qualquer texto inserido, utilizando as chaves definidas que no caso foram: *a = ai, e = enter, i = imes, o = ober, u = ufat*.
 
+## 🔗 Link para teste
+https://filipegallodev.github.io/alura-challenge-criptografia/
+
 ## ⚙️ Tecnologias utilizadas
 As tecnologias que foram utilizadas no projeto:
 
